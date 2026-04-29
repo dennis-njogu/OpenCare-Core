@@ -1,0 +1,78 @@
+name: 🔒 Security Issue
+description: Report a security vulnerability or concern
+title: "security: "
+labels: ["security"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **IMPORTANT: Security Disclosure**
+        
+        - **DO NOT** include exploit code or detailed attack vectors
+        - **DO NOT** share API keys, tokens, passwords, or secrets
+        - **DO NOT** include sensitive user data or PII
+        - **DO NOT** publicly disclose critical vulnerabilities without prior coordination
+        
+        If you have found a critical vulnerability, please report it privately via GitHub Security Advisories or our security contact instead of using this public form.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Vulnerability Summary
+      description: Brief description of the security issue.
+      placeholder: "There is a potential... vulnerability in..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity Level
+      description: How severe do you consider this issue?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+        - Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected-component
+    attributes:
+      label: Affected Component
+      description: Which part of the system is affected? (e.g., Authentication, API, Records)
+      placeholder: "The issue affects..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Potential Impact
+      description: What could be the impact if this vulnerability is exploited?
+      placeholder: "If exploited, an attacker could..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: remediation
+    attributes:
+      label: Suggested Remediation (Optional)
+      description: Do you have any suggestions for fixing this issue?
+      placeholder: "This could be fixed by..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have NOT included secrets, API keys, or exploit instructions
+          required: true
+        - label: I have NOT included sensitive user data or PII
+          required: true
+        - label: This is not a publicly known, unpatched critical vulnerability (if yes, report privately)
+          required: true
