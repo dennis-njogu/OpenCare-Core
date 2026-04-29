@@ -6,14 +6,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        ⚠️ **IMPORTANT: Security Disclosure**
+        ⚠️ **IMPORTANT: Security Reporting Guidelines**
         
-        - **DO NOT** include exploit code or detailed attack vectors
-        - **DO NOT** share API keys, tokens, passwords, or secrets
-        - **DO NOT** include sensitive user data or PII
-        - **DO NOT** publicly disclose critical vulnerabilities without prior coordination
+        - **DO NOT** include secrets, credentials, private keys, or tokens
+        - **DO NOT** include exploit instructions or proof-of-concept code
+        - **DO NOT** include sensitive user data or personally identifiable information (PII)
         
-        If you have found a critical vulnerability, please report it privately via GitHub Security Advisories or our security contact instead of using this public form.
+        🔐 **For sensitive vulnerabilities:** Please report through the security policy instead:
+        https://github.com/bos-com/OpenCare-Core/security/policy
 
   - type: textarea
     id: summary

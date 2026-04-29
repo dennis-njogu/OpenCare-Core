@@ -12,7 +12,7 @@ body:
     id: problem-statement
     attributes:
       label: Problem Statement
-      description: Describe the problem or use case this feature would solve.
+      description: What problem does this feature solve?
       placeholder: "Users currently cannot... which makes it difficult to..."
     validations:
       required: true
@@ -21,7 +21,7 @@ body:
     id: proposed-solution
     attributes:
       label: Proposed Solution
-      description: Describe your proposed solution or feature.
+      description: How should this feature work?
       placeholder: "We should implement... by..."
     validations:
       required: true
@@ -30,7 +30,7 @@ body:
     id: feature-area
     attributes:
       label: Feature Area
-      description: What part of the system would this feature affect?
+      description: What part of the system would this affect?
       options:
         - API
         - Authentication
@@ -42,29 +42,16 @@ body:
         - Appointments
         - Documentation
         - CI/CD
-        - Infrastructure
+        - Security
         - Other
     validations:
       required: true
-
-  - type: dropdown
-    id: difficulty
-    attributes:
-      label: Estimated Difficulty
-      description: How complex do you think this implementation might be?
-      options:
-        - Beginner
-        - Intermediate
-        - Advanced
-        - Not sure
-    validations:
-      required: false
 
   - type: textarea
     id: alternatives
     attributes:
       label: Alternatives Considered
-      description: Describe any alternative solutions or workarounds you've considered.
+      description: What other approaches did you consider?
       placeholder: "Option A would... but... Option B would..."
     validations:
       required: false
@@ -73,7 +60,7 @@ body:
     id: additional-context
     attributes:
       label: Additional Context
-      description: Any other context, links, or research that might be helpful.
+      description: Any other context, links, or research that might be helpful
       placeholder: "Related issues: #123, #456..."
     validations:
       required: false
@@ -85,7 +72,5 @@ body:
       options:
         - label: I have searched existing issues and this is not a duplicate
           required: true
-        - label: This feature aligns with OpenCare-Core's project scope
+        - label: This feature aligns with the project scope
           required: true
-        - label: I have provided sufficient context and use cases
-          required: false
